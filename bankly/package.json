@@ -1,0 +1,26 @@
+{
+  "name": "bankly",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "jest",
+    "seed": "dropdb bankly && createdb bankly && psql bankly < data.sql && dropdb bankly_test && createdb bankly_test && psql bankly_test < data.sql",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^8.2.0",
+    "express": "^4.16.4",
+    "jest": "^27.3.1",
+    "jsonwebtoken": "^8.3.0",
+    "nodemon": "^2.0.14",
+    "pg": "^8.3.0",
+    "supertest": "^3.3.0"
+  },
+  "description": "",
+  "devDependencies": {
+    "mock-req-res": "^1.2.0"
+  }
+}
